@@ -7,7 +7,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @version 2.0 Aug 13, 2019
  * @version 3.0 July 21, 2020
  */
-public class KilgoreTrout extends Student implements SpecialInterestOrHobby
+public class ShreyValia extends Student implements SpecialInterestOrHobby
 {
 
     /**
@@ -22,7 +22,7 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
      * @param int s (seat number within row seating arrangement)
      * 
      */
-    public KilgoreTrout(String f, String l, int r, int s) {
+    public ShreyValia(String f, String l, int r, int s) {
         firstName=f;
         lastName=l;
         mySeatX=r;
@@ -38,16 +38,18 @@ public class KilgoreTrout extends Student implements SpecialInterestOrHobby
      * Pay attention to how the row and seat variables set the location of the image.  1,1 is the first cell in the upper left
      * of the classroom.
      */
-    public KilgoreTrout() {
-        firstName="Kilgore";
-        lastName="Trout";
-        mySeatX=1;
-        mySeatY=1;
+    public ShreyValia() {
+        firstName="Shrey";
+        lastName="Valia";
+        mySeatX=3;
+        mySeatY=2;
        // imgFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        portraitFile=firstName.toLowerCase()+ lastName.toLowerCase()+".jpg";
        standingFile=firstName.toLowerCase()+ lastName.toLowerCase()+"-standing.jpg";
         soundFile=firstName.toLowerCase()+ lastName.toLowerCase()+".wav";
-        setImage(portraitFile);
+        GreenfootImage image = new GreenfootImage(portraitFile);
+        image.scale(60, 60); // This will reduce the size of the image by half.
+        setImage(image);        
         sitting=true;
     }
     
